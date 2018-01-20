@@ -10,4 +10,9 @@ class Handball extends Ball implements BallInterface
         parent::__construct($Name, $diameter, $material);
     }
 
+    public function getVolume(): float
+    {
+        return (1/6) * pi() * pow($this->getDiameter(), 3);
+    }
+
 }

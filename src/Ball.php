@@ -61,17 +61,14 @@ abstract class Ball
      * Function to calculate the volume
      * @return float
      */
-    public function getVolume(): float
-    {
-        return (1/6) * pi() * pow($this->getDiameter(), 3);
-    }
+    abstract public function getVolume(): float;
 
     /**
      * @return string
      */
     public function __toString()
     {
-        return $this->getName() . ", " . $this->getDiameter() . ", " . $this->getMaterial() . ", " .  $this->getVolume();
+        return $this->getName() . ", " . $this->getDiameter() . " cm, " . $this->getMaterial() . ", " .  $this->getVolume();
     }
 
 }
