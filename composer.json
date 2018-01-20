@@ -1,0 +1,12 @@
+{
+    "name": "perl/ball",
+    "description": "Ball creation and calculating for a project",
+    "type": "library",
+    "license": "Apache",
+    "autoload": {
+        "psr-4": {
+            "PERL\\Ball\\": "src/"
+        }
+    },
+    "require": {}
+}
